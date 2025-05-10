@@ -22,5 +22,6 @@ func main() {
 	} else {
 		num = num + 1
 		fmt.Println(num)
+		fmt.println(num)
 	}
 }
