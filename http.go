@@ -32,7 +32,7 @@ func jsonHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handler)           // Route: /
 	http.HandleFunc("/about", aboutHandler) // Route: /about
-	http.HandleFunc("/json", jsonHandler)   // Route: /json
+	http.HandleFunc("/json", jsonHandler)   
 
 	fmt.Println("Server is running at http://localhost:8080/")
 	http.ListenAndServe(":8080", nil)
