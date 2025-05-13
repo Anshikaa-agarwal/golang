@@ -30,7 +30,7 @@ func jsonHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", handler)           // Route: /
+	http.HandleFunc("/", handler)           
 	http.HandleFunc("/about", aboutHandler) 
 	http.HandleFunc("/json", jsonHandler)   
 
