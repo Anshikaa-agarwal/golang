@@ -10,7 +10,7 @@ import (
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Method:", r.Method)     // GET, POST, etc.
 	fmt.Println("URL Path:", r.URL.Path) // /hello
-	fmt.Println("Headers:", r.Header)    // Map of headers
+	fmt.Println("Headers:", r.Header)
 	fmt.Println("Query Param:", r.URL.Query().Get("id"))
 }
 
